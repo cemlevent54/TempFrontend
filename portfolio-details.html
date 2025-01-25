@@ -27,6 +27,9 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Devicon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -61,29 +64,13 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#education"><i class="bi bi-mortarboard navicon"></i> Education</a></li>
+        <li><a href="index.html#experience"><i class="bi bi-briefcase navicon"></i> Experience</a></li>
+        <li><a href="index.html#skills"><i class="bi bi-gear navicon"></i> Skills</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
 
@@ -106,84 +93,77 @@
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/app-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+          
+          <!-- Sol Üst: Proje Resmi -->
+          <div class="col-lg-6">
+            <div class="portfolio-details-image">
+              <img src="assets/img/portfolio/app-1.jpg" alt="" class="img-fluid">
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+          <!-- Sağ Üst: Project Information -->
+          <div class="col-lg-6">
+            <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
                 <li><strong>Category</strong>: Web design</li>
                 <li><strong>Client</strong>: ASU Company</li>
                 <li><strong>Project date</strong>: 01 March, 2020</li>
                 <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Project Video</strong>: <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">Watch on YouTube</a></li>
+                <li><strong>Github URL</strong>: <a href="https://github.com/username/repository" target="_blank">View on Github</a></li>
               </ul>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+          </div>
+
+          <!-- Sol Alt: Tech Stack -->
+          <div class="col-lg-6">
+            <div class="portfolio-info">
+              <h3>Tech Stack</h3>
+              <div class="tech-stack">
+                <div class="tech-item">
+                  <i class="devicon-react-original colored"></i>
+                  <span>React.js</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-nodejs-plain colored"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-mongodb-plain colored"></i>
+                  <span>MongoDB</span>
+                </div>
+                <div class="tech-item">
+                  <i class="devicon-typescript-plain colored"></i>
+                  <span>TypeScript</span>
+                </div>
+                <!-- Daha fazla teknoloji ekleyebilirsiniz -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Sağ Alt: Project Description -->
+          <div class="col-lg-6">
+            <div class="portfolio-description">
+              <h2>Project Description</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos.
               </p>
             </div>
           </div>
 
         </div>
-
       </div>
-
-    </section><!-- /Portfolio Details Section -->
+    </section>
 
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
-
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Cem Levent Avcı</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -193,7 +173,6 @@
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -216,6 +195,46 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- CSS -->
+  <style>
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;  /* Çok fazla item olduğunda alt satıra geçmesi için */
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    /* Her item için minimum genişlik */
+    min-width: 120px;
+  }
+
+  .tech-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .tech-item i {
+    font-size: 1.5rem;
+  }
+
+  .tech-item span {
+    font-size: 0.9rem;
+    color: #45505b;
+  }
+
+  /* Alt bölümlerin yüksekliğini eşitlemek için */
+  .portfolio-info, .portfolio-description {
+    height: 100%;
+    margin-bottom: 0;
+  }
+  </style>
 
 </body>
 
